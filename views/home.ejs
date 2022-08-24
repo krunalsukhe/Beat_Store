@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BeatStore</title>
+    <script src="https://kit.fontawesome.com/69c7fdee43.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+</head>
+<body>
+     <nav id="nav">
+        <ul>
+            <li id="logo">BEATZZ</li>
+            <li id="about" onclick="fdrop()">About
+            </li>
+        </ul>
+        <div id="sign">
+            <a class="signbut" href="/register">SignUp </a>
+            <a class="signbut" href="/login"> SignIn </a>
+        </div>
+    </nav>
+    <p class="about_dropdown">Hello, all types of beats are available here and custom made beats can also be done.<br> Hope you all like the beatzz. </p>
+    <div class="cart" onclick="location.href='cart_index.html';">
+        <span class="your_cart">Your Cart</span>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart_val">0</span>
+    </div>
+    <div class="container">
+        <h2 id="h2">Beat List</h2>
+        <div class="beatlist">
+            <div class="beatbox"> 
+                <span class="beatname">Bekarar</span>
+                <audio src="/beats/bekarar.wav" id="beat1"></audio>
+                <!-- <button onclick="playAudio(beat1)"><i class="fa-solid fa-circle-play"></i></button> -->
+                <i class="playbut fa-regular  fa-circle-play" id="b1" onclick="playAudio(beat1,b1)"></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat1)"></i>
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+            </div>
+            <div class="beatbox"> 
+                <span class="beatname">Blukk</span>
+                <audio src="/beats/blukk.mp3" id="beat2"></audio>
+                <i class="playbut fa-regular  fa-circle-play" id="b2" onclick="playAudio(beat2,b2)" ></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat2)"></i>    
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+
+            </div>
+            <div class="beatbox"> 
+                <span class="beatname">Homesick</span>
+                <audio src="/beats/homesick.mp3" id="beat3"></audio>
+                <i class="playbut fa-regular fa-circle-play" id="b3" onclick="playAudio(beat3,b3)" ></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat3)"></i>
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+
+            </div>
+            <div class="beatbox"> 
+                <span class="beatname">Phonkk</span>
+                <audio src="/beats/Phonk.wav" id="beat4"></audio>
+                <i class="playbut fa-regular  fa-circle-play" id="b4" onclick="playAudio(beat4,b4)" ></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat4)"></i>
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+
+            </div>
+            <div class="beatbox"> 
+                <span class="beatname">Rio</span>
+                <audio src="/beats/Rio.mp3" id="beat5"></audio>
+                <i class="playbut fa-regular  fa-circle-play" id="b5" onclick="playAudio(beat5,b5)" ></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat5)"></i>
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+
+            </div>
+            <div class="beatbox"> 
+                <span class="beatname">Venom</span>
+                <audio src="/beats/venom.wav" id="beat6"></audio>
+                <i class="playbut fa-regular  fa-circle-play" id="b6" onclick="playAudio(beat6,b6)" ></i>
+                <i class="repbut fa-solid fa-repeat" onclick="frepeat(beat6)"></i>
+                <i title="Add to cart" class="fa-solid fa-cart-plus" onclick="cartval()"></i>
+
+            </div>
+            
+        </div>
+     </div>
+     <script src="/js/homejs.js"></script>
+</body>
+</html>
