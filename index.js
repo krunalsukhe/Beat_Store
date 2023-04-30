@@ -26,7 +26,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
 // DB connection 
 mongoose
-  .connect("mongodb://krunalsukhe:6309433060@cluster0-shard-00-00.yhryi.mongodb.net:27017,cluster0-shard-00-01.yhryi.mongodb.net:27017,cluster0-shard-00-02.yhryi.mongodb.net:27017/?ssl=true&replicaSet=atlas-9ulhha-shard-0&authSource=admin&retryWrites=true&w=majority", {
+  .connect("mongodb+srv://krunalsukhe:6309433060@cluster0.yhryi.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
